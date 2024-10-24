@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Suggestion Results</title>
+</head>
+<body>
+    <h1>Video Suggestion Results</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% else %}
+        <h2>Suggested Keywords</h2>
+        <ul>
+            {% for keyword in keywords %}
+                <li>{{ keyword }}</li>
+            {% endfor %}
+        </ul>
+        <p>{{ suggestion }}</p>
+    {% endif %}
+
+    <a href="/">Back to Search</a>
+</body>
+</html>
