@@ -2,7 +2,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 # Replace with your YouTube API Key
-API_KEY = 'AIzaSyCXG6v5qLH4Dn6KeCJ3_4vIGMAmeRkGuD4'
+API_KEY = 'ADD_YOUR_YOUTUBE_API'
 
 def fetch_video_data(query, max_results=10):
     try:
